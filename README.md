@@ -20,6 +20,14 @@ This project is designed for **learning**, **experimentation**, and **educationa
 Feel free to fork it, modify it, or build tools on top of it!
 
 ---
+![image](https://github.com/user-attachments/assets/31340bde-b08a-46b0-a677-36c5240fb175)
+
+![image](https://github.com/user-attachments/assets/b2b431b0-9131-4b46-a5b9-4dde33ac5243)
+
+![image](https://github.com/user-attachments/assets/83ce8a82-4b58-4aaf-bf68-39674171b9aa)
+
+
+---
 
 ## 🧠 Core Features
 
