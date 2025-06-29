@@ -101,13 +101,13 @@ Program Halted.
 ### 📦 Compile with g++:
 
 ```bash
-g++ main.cpp RohitVM.cpp RohitUtils.cpp -o rohitsim
+g++ -std=c++17 main.cpp RohitVM.cpp RohitUtils.cpp -o VirtualCPU
 ```
 
 ### ▶️ Run:
 
 ```bash
-./rohitsim
+./VirtualCPU 
 ```
 
 > 💡 Requires: g++ 9+ and any modern Linux/Unix/Mac system
