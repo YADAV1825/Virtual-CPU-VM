@@ -1,10 +1,18 @@
-# Virtual-CPU-VM-IN LINUX 
-Built by :Rohit Yadav
-          NIT Jalandhar
-          
-short summary: built a 16 bit virtual cpu from scratch in cpp with 65kb of ram
+# ⚙️ Virtual-CPU + Basic VM - IN LINUX
 
-# ⚙️ RohitVM — A 16-bit Virtual CPU Simulator in C++
+Built by : **Rohit Yadav**  
+*NIT Jalandhar*
+
+---
+
+## 🧾 Short Summary
+
+Built a 16-bit virtual CPU from scratch in C++ with simulated 65KB of RAM.  
+It is **not just a virtual CPU** — this project also functions as a **basic Virtual Machine (VM)** capable of executing instruction-based programs.
+
+---
+
+# ⚙️ RohitVM — A 16-bit Virtual CPU + Virtual Machine in C++
 
 ![badge](https://img.shields.io/badge/status-Working-brightgreen)  
 🎓 Made from scratch by [Rohit Yadav](https://github.com/YourGitHubUsername) — *pure C++, zero dependencies.*
@@ -13,19 +21,17 @@ short summary: built a 16 bit virtual cpu from scratch in cpp with 65kb of ram
 
 ## 🚀 About the Project
 
-**RohitVM** is a lightweight, hand-crafted **16-bit virtual CPU simulator** written in C++.  
-It mimics the basic functionality of a real CPU — registers, memory, instructions — and executes small programs via a custom instruction set.
+**RohitVM** is a lightweight, hand-crafted **16-bit Virtual Machine and CPU simulator** written entirely in C++.  
+It mimics the basic functionality of a real CPU — registers, memory, instructions — and executes full programs line-by-line via a custom instruction set.
 
 This project is designed for **learning**, **experimentation**, and **educational demos**.  
 Feel free to fork it, modify it, or build tools on top of it!
 
 ---
+
 ![image](https://github.com/user-attachments/assets/31340bde-b08a-46b0-a677-36c5240fb175)
-
 ![image](https://github.com/user-attachments/assets/b2b431b0-9131-4b46-a5b9-4dde33ac5243)
-
 ![image](https://github.com/user-attachments/assets/83ce8a82-4b58-4aaf-bf68-39674171b9aa)
-
 
 ---
 
@@ -34,6 +40,7 @@ Feel free to fork it, modify it, or build tools on top of it!
 ✅ **16-bit architecture** — all operations on 16-bit unsigned integers  
 ✅ **65 KB virtual RAM** — simulated with 256 memory slots (uint16_t)  
 ✅ **8 general-purpose registers** — R1 to R8  
+✅ **Virtual Instruction Execution** — a full interpreter cycle  
 ✅ **Custom instruction set** including:
 
 | Opcode   | Description                             |
@@ -66,10 +73,10 @@ PRINT R1
 HLT
 ```
 
-The CPU will:
-- Load this program
+The VM will:
+- Parse and load this program
 - Execute instructions line-by-line
-- Output results via `std::cout`
+- Output results using `std::cout`
 
 ---
 
@@ -89,7 +96,7 @@ Program Halted.
 📦 RohitVM/
 ├── main.cpp           → Entry point, test program
 ├── RohitVM.hpp        → Class & struct declarations
-├── RohitVM.cpp        → CPU execution logic
+├── RohitVM.cpp        → CPU + VM execution logic
 ├── RohitUtils.hpp     → Utility function declarations
 ├── RohitUtils.cpp     → Utility function implementations
 ```
@@ -107,7 +114,7 @@ g++ -std=c++17 main.cpp RohitVM.cpp RohitUtils.cpp -o VirtualCPU
 ### ▶️ Run:
 
 ```bash
-./VirtualCPU 
+./VirtualCPU
 ```
 
 > 💡 Requires: g++ 9+ and any modern Linux/Unix/Mac system
@@ -118,12 +125,13 @@ g++ -std=c++17 main.cpp RohitVM.cpp RohitUtils.cpp -o VirtualCPU
 
 - 🧑‍🎓 Teaching students how CPUs work
 - 🔬 Experimenting with instruction set design
-- 🧪 Learning virtual machine concepts in C++
-- 🧱 Foundation for building higher-level virtual languages
+- 🧪 Learning virtual machine and runtime concepts in C++
+- 🧱 Foundation for building higher-level virtual languages or emulators
 
 ---
 
-## 📌 To-Do / Ideas (IT IS A VM i.e VIRTUAL MACHINE ALREADY BUT TO MAKE IT A BETTER VM IN FUTURE WE CAN DO THIS)
+## 📌 To-Do / Ideas  
+> 🧠 **It is a Virtual Machine already** — but here’s how we can make it even better:
 
 - [ ] Implement stack + PUSH/POP
 - [ ] Add function calls (CALL/RET)
@@ -140,7 +148,6 @@ g++ -std=c++17 main.cpp RohitVM.cpp RohitUtils.cpp -o VirtualCPU
 ## 🙏 Acknowledgements
 
 This project was built by me completely from scratch using only the C++ Standard Library.  
-
 Thanks for checking it out!
 
 ---
@@ -152,4 +159,3 @@ MIT License — use it freely in open/closed source projects.
 ---
 
 **Give it a ⭐ if you like it, and feel free to fork!**
-
