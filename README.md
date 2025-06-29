@@ -10,6 +10,13 @@ Built by : **Rohit Yadav**
 Built a 16-bit virtual CPU from scratch in C++ with simulated 65KB of RAM.  
 It is **not just a virtual CPU** — this project also functions as a **basic Virtual Machine (VM)** capable of executing instruction-based programs.
 
+| Real-world Equivalent | Our Project                                   |
+| --------------------- | ---------------------------------------------- |
+| Intel 8086 CPU        | Our Virtual CPU logic (R1–R8, MOV, ADD, etc.) |
+| Assembly Program      | Our `.vector<string>` instruction list        |
+| Runtime + RAM         | Our `VM` class (CPU + memory + executor loop) |
+
+
 ---
 
 # ⚙️ RohitVM — A 16-bit Virtual CPU + Virtual Machine in C++
